@@ -60,27 +60,36 @@ body {
 }
 
 .hair>.chops>.chop {
+    --radius-chop: 5px;
     background-color: var(--cor-hair);
     height: 85px;
     width: 21px;
 }
 
-.hair>.chops>.chop:first-child::after {
+.hair>.chops>.chop::after {
     content: '';
     display: flex;
     background-color: var(--cor-hair);
     height: 38px;
     width: 18px;
+}
+
+.hair>.chops>.chop:first-child::after {
     margin-left: 21px;
-    border-bottom-right-radius: 5px;
+    border-bottom-right-radius: var(--radius-chop);
+}
+
+.hair>.chops>.chop:last-child::after {
+    margin-left: -18px;
+    border-bottom-left-radius: var(--radius-chop);
 }
 
 .hair>.chops>.chop:first-child {
-    border-bottom-right-radius: 5px;
+    border-bottom-right-radius: var(--radius-chop);
 }
 
 .hair>.chops>.chop:last-child {
-    border-bottom-left-radius: 5px;
+    border-bottom-left-radius: var(--radius-chop);
 }
 
 .ears {
