@@ -1,2 +1,2 @@
-# my-self-css
-Me rosto desenhado via CSS
+# Meu rosto
+Meu rosto desenhado via HTML e CSS
