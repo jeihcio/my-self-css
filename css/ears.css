@@ -1,0 +1,29 @@
+.ears {
+    position: absolute;
+    width: 100%;
+    height: 90px;
+    top: 50%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.ear {
+    --deg-ear: 4deg;
+    --margin-ear: 5px;
+    background-color: var(--cor-skin);
+    width: 38px;
+    height: 90px;
+    border: 5px solid var(--cor-borda);
+    border-radius: 50%;
+}
+
+.ear:first-child {
+    margin-left: var(--margin-ear);
+    transform: rotate(var(--deg-ear));
+}
+
+.ear:last-child {
+    margin-right: var(--margin-ear);
+    transform: rotate(calc(var(--deg-ear) * -1));
+}
