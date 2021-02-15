@@ -49,7 +49,7 @@ body {
     content: '';
     display: flex;
     background: var(--cor-hair);
-    height: 144px;
+    height: 176px;
     width: 365px;
     border-radius: 50% 50% 0 0;
 }
@@ -57,10 +57,11 @@ body {
 .hair>.chops {
     display: flex;
     justify-content: space-between;
+    margin-top: -32px;
 }
 
 .hair>.chops>.chop {
-    --radius-chop: 5px;
+    --radius-chop: 8px;
     background-color: var(--cor-hair);
     height: 85px;
     width: 21px;
@@ -90,6 +91,18 @@ body {
 
 .hair>.chops>.chop:last-child {
     border-bottom-left-radius: var(--radius-chop);
+}
+
+.hair .chop-center {
+    background-color: var(--cor-skin);
+    position: absolute;
+    height: 32px;
+    width: 287px;
+    z-index: 1;
+    border-radius: 10px 10px 0 0;
+    margin-top: -32px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .ears {
