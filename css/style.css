@@ -38,13 +38,49 @@ body {
 
 .hair {
     position: absolute;
-    background: var(--cor-hair);
     height: 227px;
     width: 365px;
     left: 50%;
     top: 3px;
     transform: translateX(-50%);
+}
+
+.hair::before {
+    content: '';
+    display: flex;
+    background: var(--cor-hair);
+    height: 144px;
+    width: 365px;
     border-radius: 50% 50% 0 0;
+}
+
+.hair>.chops {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hair>.chops>.chop {
+    background-color: var(--cor-hair);
+    height: 85px;
+    width: 21px;
+}
+
+.hair>.chops>.chop:first-child::after {
+    content: '';
+    display: flex;
+    background-color: var(--cor-hair);
+    height: 38px;
+    width: 18px;
+    margin-left: 21px;
+    border-bottom-right-radius: 5px;
+}
+
+.hair>.chops>.chop:first-child {
+    border-bottom-right-radius: 5px;
+}
+
+.hair>.chops>.chop:last-child {
+    border-bottom-left-radius: 5px;
 }
 
 .ears {
