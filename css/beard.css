@@ -1,0 +1,33 @@
+.beard {
+    position: absolute;
+    width: 170px;
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 220px;
+}
+
+.beard>div {
+    background-color: #000;
+    width: 14px;
+    height: 40px;
+    border-radius: 7px;
+}
+
+.beard>div:nth-child(1),
+.beard>div:nth-child(7) {
+    height: 35px;
+    margin-bottom: 25px;
+}
+
+.beard>div:nth-child(2),
+.beard>div:nth-child(6) {
+    height: 45px;
+    margin-bottom: 10px;
+}
+
+.beard>div:nth-child(3),
+.beard>div:nth-child(5) {
+    margin-bottom: 5px;
+}
