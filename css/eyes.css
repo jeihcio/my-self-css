@@ -15,6 +15,7 @@
         display: flex;
         justify-content: center;
         overflow: hidden;
+        margin: 0 var(--margin-eyes);
     }
     
     .eyes>.eye>.globe {
