@@ -1,0 +1,12 @@
+.eyebrows {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.eyebrows>.eyebrow {
+    width: 75px;
+    height: 45px;
+    border-top: 5px solid #000;
+    border-radius: 50%;
+}
