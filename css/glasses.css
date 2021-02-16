@@ -1,0 +1,31 @@
+.glasses {
+    --border-color-glasses: #000;
+    --color-glasses: #2e2c2b;
+    --border-glasses: 5px;
+    width: 100%;
+    display: flex;
+    margin-top: -75px;
+}
+
+.glasses>.haste {
+    background-color: var(--color-glasses);
+    border: var(--border-glasses) solid var(--border-color-glasses);
+    width: 30px;
+    height: 16px;
+    margin-top: 5px;
+}
+
+.glasses>.lens {
+    height: 87px;
+    width: 139px;
+    border: var(--border-glasses) solid var(--border-color-glasses);
+    border-radius: 6px;
+}
+
+.glasses>.brig {
+    height: 25px;
+    width: 24px;
+    border: var(--border-glasses) solid var(--border-color-glasses);
+    background-color: var(--color-glasses);
+    align-self: center;
+}
