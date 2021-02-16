@@ -1,0 +1,23 @@
+.mustache {
+    --rotate-mustache: 11deg;
+    width: 100%;
+    margin-top: 13px;
+    display: flex;
+    justify-content: center;
+}
+
+.mustache>div {
+    background-color: #000;
+    width: 65px;
+    height: 15px;
+    margin: 0 7px;
+    border-radius: 8px;
+}
+
+.mustache>div:first-child {
+    transform: rotate(calc(var(--rotate-mustache) * -1));
+}
+
+.mustache>div:last-child {
+    transform: rotate(var(--rotate-mustache));
+}
