@@ -1,0 +1,12 @@
+.mouth {
+    background-color: #fff;
+    width: 130px;
+    height: 50px;
+    align-self: center;
+    margin-top: 10px;
+    border: 5px solid var(--cor-borda);
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
